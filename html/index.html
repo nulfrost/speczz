@@ -6,11 +6,61 @@
     <!-- https://electronjs.org/docs/tutorial/security#csp-meta-tag -->
     <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';" />
     <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/stylesheet.css">
 </head>
 
-<body>
+<body class="text-white">
+
     <h1 class="text-white text-center font-semibold mt-4 text-2xl">speczz <span role="image"
-            aria-label="fire-emoji">🔥</span></h1>
+            aria-label="highvoltage-emoji">⚡</span></h1>
+    <div class="grid-container p-10 text-xs">
+        <div class="flex flex-col items-center os">
+            <h2 class="font-bold text-lg">OS</h2>
+            <p class="platform">Platform: </p>
+            <p class="logo">Name: </p>
+            <p class="release">Release: </p>
+            <p class="hostname">Hostname: </p>
+            <p class="build">Build version: </p>
+        </div>
+        <div class="flex flex-col items-center cpu">
+            <h2 class="font-bold text-lg">CPU</h2>
+            <p class="manu">Manufacturer: </p>
+            <p class="brand">Brand: </p>
+            <p class="speed">Speed: </p>
+            <p class="cores">Cores: </p>
+            <p class="physCores">Threads: </p>
+        </div>
+        <div class="flex flex-col items-center motherboard">
+            <h2 class="font-bold text-lg">Motherboard</h2>
+            <p class="moboManu">Manufacturer: </p>
+            <p class="model">Model: </p>
+            <p class="version">Version: </p>
+            <p class="serial">Serial: </p>
+        </div>
+        <div class="flex flex-col items-center memory">
+            <h2 class="font-bold text-lg">Memory</h2>
+            <p class="memSize">Size: </p>
+            <p class="type">Type: </p>
+            <p class="clockSpeed">Clock Speed: </p>
+            <p class="memManu">Manufacturer: </p>
+            <p class="voltage">Voltage: </p>
+        </div>
+        <div class="flex flex-col items-center gpu">
+            <h2 class="font-bold text-lg">GPU</h2>
+            <p class="gpus">Total GPUS: </p>
+            <p class="gpuModel">Model: </p>
+            <p class="vendor">Vendor: </p>
+            <p class="vram">Vram: </p>
+        </div>
+        <div class="flex flex-col items-center disks">
+            <h2 class="font-bold text-lg">DISKS</h2>
+            <p class="manu">Manufacturer: </p>
+            <p class="brand">Brand: </p>
+            <p class="speed">Speed: </p>
+            <p class="cores">Cores: </p>
+            <p class="physCores">Threads: </p>
+        </div>
+    </div>
     <script src="../js/info.js"></script>
 </body>
 
