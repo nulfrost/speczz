@@ -8,7 +8,7 @@ async function buildInstaller() {
         await winInstall.createWindowsInstaller({
             appDirectory: path.join(rootPath, "speczz-win32-x64"),
             noMsi: true,
-            iconUrl: "https://raw.githubusercontent.com/Danex2/speczz/master/icon.png",
+            iconUrl: "https://raw.githubusercontent.com/Danex2/speczz/master/icon.ico",
             exe: 'speczz.exe',
             setupExe: "speczzSetup.exe",
             skipUpdateIcon: true

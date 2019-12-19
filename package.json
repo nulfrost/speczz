@@ -7,7 +7,8 @@
   "author": "Dane Miller <khadane.miller@gmail.com",
   "scripts": {
     "start": "electromon index.js",
-    "build:installer": "node ./js/winInstall.js"
+    "build:installer": "node ./js/winInstall.js",
+    "package": "electron-packager . --asar"
   },
   "license": "MIT",
   "devDependencies": {
