@@ -1,17 +1,23 @@
 {
-  "name": "spec2",
+  "name": "speczz",
   "version": "1.0.0",
   "main": "index.js",
+  "productName": "speczz",
+  "description": "View information about your computer hardware.",
+  "author": "Dane Miller <khadane.miller@gmail.com",
   "scripts": {
-    "start": "electromon index.js"
+    "start": "electromon index.js",
+    "build:installer": "node ./js/winInstall.js"
   },
   "license": "MIT",
   "devDependencies": {
     "electromon": "^1.0.10",
-    "electron": "^7.1.5"
+    "electron": "^7.1.5",
+    "electron-winstaller": "^4.0.0"
   },
   "dependencies": {
     "custom-electron-titlebar": "^3.1.0",
-    "systeminformation": "^4.16.0"
+    "systeminformation": "^4.16.0",
+    "update-electron-app": "^1.5.0"
   }
 }

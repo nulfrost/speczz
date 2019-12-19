@@ -115,7 +115,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
     si.graphics((data) => {
-        gpus.innerHTML += data.controllers && data.controllers.length
+        gpus.innerHTML += data.controllers.length
         gpuModel.innerHTML += data.controllers[0].model
         vendor.innerHTML += data.controllers[0].vendor
         vram.innerHTML += data.controllers[0].vram
