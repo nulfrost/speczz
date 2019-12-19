@@ -9,12 +9,12 @@
     <link rel="stylesheet" href="../css/stylesheet.css">
 </head>
 
-<body class="text-white">
+<body class="text-white antialiased">
 
     <h1 class="text-white text-center font-semibold mt-4 text-2xl">speczz <span role="image"
             aria-label="highvoltage-emoji">⚡</span></h1>
-    <div class="grid-container p-10 text-xs">
-        <div class="flex flex-col items-center os">
+    <div class="grid-container p-10 text-xs tracking-wide">
+        <div class="flex flex-col text-right os">
             <h2 class="font-bold text-lg">OS</h2>
             <p class="platform">Platform: </p>
             <p class="logo">Name: </p>
@@ -22,7 +22,7 @@
             <p class="hostname">Hostname: </p>
             <p class="build">Build version: </p>
         </div>
-        <div class="flex flex-col items-center cpu">
+        <div class="flex flex-col cpu">
             <h2 class="font-bold text-lg">CPU</h2>
             <p class="manu">Manufacturer: </p>
             <p class="brand">Brand: </p>
@@ -30,35 +30,34 @@
             <p class="cores">Cores: </p>
             <p class="physCores">Threads: </p>
         </div>
-        <div class="flex flex-col items-center motherboard">
+        <div class="flex flex-col motherboard text-right">
             <h2 class="font-bold text-lg">Motherboard</h2>
             <p class="moboManu">Manufacturer: </p>
             <p class="model">Model: </p>
             <p class="version">Version: </p>
             <p class="serial">Serial: </p>
         </div>
-        <div class="flex flex-col items-center memory">
+        <div class="flex flex-col memory">
             <h2 class="font-bold text-lg">Memory</h2>
+            <p class="ramSlots">Modules: </p>
             <p class="memSize">Size: </p>
             <p class="type">Type: </p>
             <p class="clockSpeed">Clock Speed: </p>
             <p class="memManu">Manufacturer: </p>
             <p class="voltage">Voltage: </p>
         </div>
-        <div class="flex flex-col items-center gpu">
+        <div class="flex flex-col  text-right gpu">
             <h2 class="font-bold text-lg">GPU</h2>
             <p class="gpus">Total GPUS: </p>
             <p class="gpuModel">Model: </p>
             <p class="vendor">Vendor: </p>
             <p class="vram">Vram: </p>
         </div>
-        <div class="flex flex-col items-center disks">
+        <div class="flex flex-col  disks">
             <h2 class="font-bold text-lg">DISKS</h2>
-            <p class="manu">Manufacturer: </p>
-            <p class="brand">Brand: </p>
-            <p class="speed">Speed: </p>
-            <p class="cores">Cores: </p>
-            <p class="physCores">Threads: </p>
+            <ul class="disk-array">
+
+            </ul>
         </div>
     </div>
     <script src="../js/info.js"></script>

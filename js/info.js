@@ -95,6 +95,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const clockSpeed = document.querySelector(".clockSpeed")
     const memManu = document.querySelector(".memManu")
     const voltage = document.querySelector(".voltage")
+    const ramSlots = document.querySelector(".ramSlots")
 
 
     si.memLayout((data) => {
@@ -103,6 +104,7 @@ document.addEventListener("DOMContentLoaded", () => {
         clockSpeed.innerHTML += data[0].clockSpeed + " Mhz"
         memManu.innerHTML += data[0].manufacturer
         voltage.innerHTML += data[0].voltageConfigured + "V"
+        ramSlots.innerHTML += data.length
     });
 
     // GRAPHICS SPECS
@@ -118,5 +120,14 @@ document.addEventListener("DOMContentLoaded", () => {
         vendor.innerHTML += data.controllers[0].vendor
         vram.innerHTML += data.controllers[0].vram
     });
+
+    // DISK SPECS
+    const diskContainer = document.querySelector(".disk-array")
+
+    si.diskLayout((data) => {
+        diskContainer.innerHTML = data.map((disk) => {
+            return `<li>${disk.name}</li>`
+        }).join("")
+    })
 
 })
