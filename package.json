@@ -18,7 +18,7 @@
   },
   "dependencies": {
     "custom-electron-titlebar": "^3.1.0",
-    "systeminformation": "^4.16.0",
+    "systeminformation": "^5.6.4",
     "update-electron-app": "^1.5.0"
   }
 }
